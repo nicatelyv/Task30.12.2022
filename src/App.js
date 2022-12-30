@@ -1,8 +1,6 @@
 import { Field, Form, Formik } from 'formik';
 import { useState } from 'react';
 import './App.css';
-
-
 function App() {
   const [data,setData] = useState([])
   return (
@@ -21,12 +19,12 @@ function App() {
         }} 
         >
         {(props)=>(
-          <Form className='inplar'>
-            <Field className="inp" name="name" placeholder="Name..."/>
-            <Field className="inp" name="lastname"placeholder="Last Name..."/>
-            <Field className="inp" name="email" type="email" placeholder="Enter e-mail adres..."/>
-            <Field className="inp" name="phonenumber" type="number" placeholder="Phone Number..."/>
-            <Field className="inp" name="about" type="text" placeholder="About..."/>
+          <Form className='inputs'>
+            <Field className="input" name="name" placeholder="Name..."/>
+            <Field className="input" name="lastname"placeholder="Last Name..."/>
+            <Field className="input" name="email" type="email" placeholder="Enter e-mail adres..."/>
+            <Field className="input" name="phonenumber" type="number" placeholder="Phone Number..."/>
+            <Field className="input" name="about" type="text" placeholder="About..."/>
             <button type='submit'>Submit</button>
             </Form>
         )} 
@@ -39,7 +37,7 @@ function App() {
                 <p>Name: {element.name}</p>
                 <p>Last Name: {element.lastname}</p>
                 <p>E-mail: {element.email}</p>
-                <p>Phone Number: +994 {element.phonenumber}</p>
+                <p>Phone Number: {element.phonenumber}</p>
                 <p>About: {element.about}</p>
               </li>
             )
@@ -49,5 +47,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

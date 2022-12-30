@@ -53,13 +53,14 @@
 }
 
 .App Form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
 }
 
-.App .inp {
+.App .input {
     font-size: 16px;
     padding-left: 20px;
     border: none;
